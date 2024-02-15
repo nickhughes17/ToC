@@ -10,7 +10,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Vector3 velocity = Vector3.zero;
     [SerializeField] private float smoothSpeed = 0.125f;
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         Vector3 desiredPosition = target.position + offset;

@@ -6,17 +6,15 @@ using TMPro;
 public class CompassTargeting : MonoBehaviour
 {
     [SerializeField] private GameObject target;
-
     [SerializeField] private GameObject player;
-
     [SerializeField] private TMP_Text interactText;
-
     [SerializeField] private GameObject compass;
 
     void Start()
     {
         interactText.gameObject.SetActive(false);
     }
+
     void Update()
     {
         var dir = target.transform.position - player.transform.position;
