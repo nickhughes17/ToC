@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CollisionTag
+  - Treasure
+  - Inventory
+  - Tuna
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Buildings
+  - Water
+  - UI
+  - FOVCollidable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Colission
+    uniqueID: 2030594901
+    locked: 0
+  - name: Ground
+    uniqueID: 306168739
+    locked: 0
+  - name: BuildingsBehindChar
+    uniqueID: 685266495
+    locked: 0
+  - name: Actor
+    uniqueID: 2426203819
+    locked: 0
+  - name: Character
+    uniqueID: 278272525
+    locked: 0
+  - name: BuildingsInfrontOfChar
+    uniqueID: 2634315905
+    locked: 0
