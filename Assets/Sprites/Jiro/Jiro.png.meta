@@ -1,0 +1,540 @@
+fileFormatVersion: 2
+guid: 220419ca48e51464da3e502a8164e698
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7006053766613323647
+    second: Jiro_WalkUp1
+  - first:
+      213: -3801085719356142588
+    second: Jiro_WalkUp2
+  - first:
+      213: 7534121756934597513
+    second: Jiro_WalkUp3
+  - first:
+      213: -7573232437286944386
+    second: Jiro_WalkRight1
+  - first:
+      213: -2883330534149981147
+    second: Jiro_WalkRight2
+  - first:
+      213: 5055754686006037960
+    second: Jiro_FaceDown
+  - first:
+      213: -8631886402257790271
+    second: Jiro_FaceLeft
+  - first:
+      213: -7398306972422722954
+    second: Jiro_FaceRight
+  - first:
+      213: -2976619421786127517
+    second: Jiro_WalkRight3
+  - first:
+      213: 8929395432838475181
+    second: Jiro_WalkLeft3
+  - first:
+      213: -7265108746451849560
+    second: Jiro_WalkLeft2
+  - first:
+      213: -4892442668895607539
+    second: Jiro_1WalkLeft1
+  - first:
+      213: 98770327048216811
+    second: Jiro_WalkDown3
+  - first:
+      213: 4072302148583503885
+    second: Jiro_WalkDown2
+  - first:
+      213: -2290860676450773487
+    second: Jiro_WalkDown1
+  - first:
+      213: -5687156741917260038
+    second: Jiro_FaceDown2
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jiro_WalkUp1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 108
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180b9bb083f75ce90800000000000000
+      internalID: -7006053766613323647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkUp2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 110
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c87f06da4df3bc0800000000000000
+      internalID: -3801085719356142588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkUp3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 110
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98be0a802d39e8860800000000000000
+      internalID: 7534121756934597513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkRight1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 56
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71cb06193976e690800000000000000
+      internalID: -7573232437286944386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkRight2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 57
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cf3fdd72a5cf7d0800000000000000
+      internalID: -2883330534149981147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_FaceDown
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 57
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd08e2b916a92640800000000000000
+      internalID: 5055754686006037960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_FaceLeft
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 57
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca56e30d01653880800000000000000
+      internalID: -8631886402257790271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_FaceRight
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 57
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67aa279a10fe35990800000000000000
+      internalID: -7398306972422722954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkRight3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 57
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363c8ec186ce0b6d0800000000000000
+      internalID: -2976619421786127517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkLeft3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 8
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad255116d59beb70800000000000000
+      internalID: 8929395432838475181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkLeft2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 7
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae672956162d2b90800000000000000
+      internalID: -7265108746451849560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_1WalkLeft1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05638c505d8a1cb0800000000000000
+      internalID: -4892442668895607539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkDown3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 3
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0ee02d617ee5100800000000000000
+      internalID: 98770327048216811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkDown2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 3
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0831686a39b38830800000000000000
+      internalID: 4072302148583503885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_WalkDown1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 3
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1169d3e2a5a3530e0800000000000000
+      internalID: -2290860676450773487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jiro_FaceDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6cd0833192311b0800000000000000
+      internalID: -5687156741917260038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Jiro_1WalkLeft1: -4892442668895607539
+      Jiro_FaceDown: 5055754686006037960
+      Jiro_FaceDown2: -5687156741917260038
+      Jiro_FaceLeft: -8631886402257790271
+      Jiro_FaceRight: -7398306972422722954
+      Jiro_WalkDown1: -2290860676450773487
+      Jiro_WalkDown2: 4072302148583503885
+      Jiro_WalkDown3: 98770327048216811
+      Jiro_WalkLeft2: -7265108746451849560
+      Jiro_WalkLeft3: 8929395432838475181
+      Jiro_WalkRight1: -7573232437286944386
+      Jiro_WalkRight2: -2883330534149981147
+      Jiro_WalkRight3: -2976619421786127517
+      Jiro_WalkUp1: -7006053766613323647
+      Jiro_WalkUp2: -3801085719356142588
+      Jiro_WalkUp3: 7534121756934597513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

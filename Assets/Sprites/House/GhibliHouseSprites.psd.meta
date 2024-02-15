@@ -1,0 +1,761 @@
+fileFormatVersion: 2
+guid: 78a9fdc1606d97e46ab57aeb71cbbbf4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3488957414896503799
+    second: Lamppost_2
+  - first:
+      213: 2925417654153027617
+    second: House_02
+  - first:
+      213: -2731376052817185868
+    second: House_03
+  - first:
+      213: -8454484131379209637
+    second: Stonepath
+  - first:
+      213: 8488609022290828162
+    second: Bush
+  - first:
+      213: -2572210446714200221
+    second: GhibliHouseSprites_8
+  - first:
+      213: -2761123525819577708
+    second: GhibliHouseSprites_9
+  - first:
+      213: -7732241005740941937
+    second: House01
+  - first:
+      213: 8503129941965569291
+    second: GhibliHouseSprites_11
+  - first:
+      213: -4233805694513261596
+    second: GhibliHouseSprites_12
+  - first:
+      213: -3565124501463930453
+    second: GhibliHouseSprites_13
+  - first:
+      213: 2223612478931427844
+    second: GhibliHouseSprites_14
+  - first:
+      213: 7053009739846740156
+    second: GhibliHouseSprites_15
+  - first:
+      213: 5120427057536925295
+    second: GhibliHouseSprites_16
+  - first:
+      213: 1669203662925179949
+    second: GhibliHouseSprites_17
+  - first:
+      213: -3008761865288268078
+    second: GhibliHouseSprites_18
+  - first:
+      213: 1075604612675495157
+    second: GhibliHouseSprites_19
+  - first:
+      213: 4598524993440023349
+    second: GhibliHouseSprites_20
+  - first:
+      213: 3411929988485210032
+    second: GhibliHouseSprites_21
+  - first:
+      213: -5477659129565860123
+    second: GhibliHouseSprites_22
+  - first:
+      213: 9068261235945623228
+    second: GhibliHouseSprites_23
+  - first:
+      213: 8857019060436038389
+    second: GhibliHouseSprites_24
+  - first:
+      213: 3843958349428355624
+    second: GhibliHouseSprites_25
+  - first:
+      213: 7680702299733763056
+    second: GhibliHouseSprites_26
+  - first:
+      213: -6937516531226420627
+    second: GhibliHouseSprites_27
+  - first:
+      213: -8808377997754043583
+    second: GhibliHouseSprites_28
+  - first:
+      213: -7291923535940631991
+    second: GhibliHouseSprites_29
+  - first:
+      213: -5073971424352362166
+    second: GhibliHouseSprites_30
+  - first:
+      213: -8823556837490535408
+    second: GhibliHouseSprites_31
+  - first:
+      213: -885504477886543784
+    second: GhibliHouseSprites_32
+  - first:
+      213: -8059458432087523367
+    second: GhibliHouseSprites_33
+  - first:
+      213: -4552696667280635529
+    second: GhibliHouseSprites_34
+  - first:
+      213: 6772510386682332109
+    second: GhibliHouseSprites_35
+  - first:
+      213: 1365638001609265854
+    second: GhibliHouseSprites_36
+  - first:
+      213: 882075221358849755
+    second: GhibliHouseSprites_37
+  - first:
+      213: -2331716223796886917
+    second: GhibliHouseSprites_38
+  - first:
+      213: 6136767682279213650
+    second: GhibliHouseSprites_39
+  - first:
+      213: -7742334474284210075
+    second: GhibliHouseSprites_40
+  - first:
+      213: 4350177376610591478
+    second: GhibliHouseSprites_41
+  - first:
+      213: -4205065438500659564
+    second: GhibliHouseSprites_42
+  - first:
+      213: 1115284308411514274
+    second: GhibliHouseSprites_43
+  - first:
+      213: 4831347205545928188
+    second: GhibliHouseSprites_44
+  - first:
+      213: -800156392574456518
+    second: GhibliHouseSprites_45
+  - first:
+      213: 8638277590109303137
+    second: GhibliHouseSprites_46
+  - first:
+      213: -2225448653503570903
+    second: GhibliHouseSprites_47
+  - first:
+      213: -1227176008377964126
+    second: GhibliHouseSprites_48
+  - first:
+      213: -5182915948965582533
+    second: GhibliHouseSprites_49
+  - first:
+      213: 4385194845335130997
+    second: GhibliHouseSprites_50
+  - first:
+      213: -557929039838537899
+    second: GhibliHouseSprites_51
+  - first:
+      213: -3114695980471313579
+    second: GhibliHouseSprites_52
+  - first:
+      213: 5838927648508023532
+    second: GhibliHouseSprites_53
+  - first:
+      213: 7942994963676005789
+    second: GhibliHouseSprites_54
+  - first:
+      213: 8506370846615091772
+    second: GhibliHouseSprites_55
+  - first:
+      213: 3581021358411144112
+    second: GhibliHouseSprites_56
+  - first:
+      213: 2780187132059872404
+    second: GhibliHouseSprites_57
+  - first:
+      213: -8778284918802450835
+    second: GhibliHouseSprites_58
+  - first:
+      213: -7923390955057224412
+    second: GhibliHouseSprites_59
+  - first:
+      213: -3783256634263436256
+    second: GhibliHouseSprites_60
+  - first:
+      213: -3165414077639154697
+    second: GhibliHouseSprites_61
+  - first:
+      213: 4476282294116086488
+    second: GhibliHouseSprites_62
+  - first:
+      213: 4086126360192552160
+    second: GhibliHouseSprites_63
+  - first:
+      213: -327011358882892614
+    second: GhibliHouseSprites_64
+  - first:
+      213: 3466221936788554760
+    second: GhibliHouseSprites_65
+  - first:
+      213: -5385072818069018273
+    second: GhibliHouseSprites_66
+  - first:
+      213: 8629403100850360598
+    second: GhibliHouseSprites_67
+  - first:
+      213: 6354266995002942532
+    second: GhibliHouseSprites_68
+  - first:
+      213: 6148443919833039088
+    second: GhibliHouseSprites_69
+  - first:
+      213: -6951563406794375100
+    second: GhibliHouseSprites_70
+  - first:
+      213: 5530724550395896985
+    second: GhibliHouseSprites_71
+  - first:
+      213: -4968521126565617499
+    second: GhibliHouseSprites_72
+  - first:
+      213: 222537054139779174
+    second: GhibliHouseSprites_73
+  - first:
+      213: -1005304745143879136
+    second: GhibliHouseSprites_79
+  - first:
+      213: 3428793234235891023
+    second: GhibliHouseSprites_80
+  - first:
+      213: -1752033418343586504
+    second: GhibliHouseSprites_81
+  - first:
+      213: 8206021592752473256
+    second: GhibliHouseSprites_82
+  - first:
+      213: 7060451630490744177
+    second: GhibliHouseSprites_83
+  - first:
+      213: -6959746939534428402
+    second: GhibliHouseSprites_85
+  - first:
+      213: 1168815264617559307
+    second: GhibliHouseSprites_86
+  - first:
+      213: -7960514335409650619
+    second: Grass
+  - first:
+      213: 3976277089205865375
+    second: GhibliHouseSprites_88
+  - first:
+      213: -2971663160153103823
+    second: GhibliHouseSprites_89
+  - first:
+      213: 4038555184984906654
+    second: GhibliHouseSprites_90
+  - first:
+      213: -4725663711155037985
+    second: GhibliHouseSprites_91
+  - first:
+      213: -2030531226637633032
+    second: GhibliHouseSprites_92
+  - first:
+      213: 7712280890656665032
+    second: Tree
+  - first:
+      213: -2289352756395681648
+    second: GhibliHouseSprites_94
+  - first:
+      213: 4310945693146150409
+    second: GhibliHouseSprites_96
+  - first:
+      213: 185408958469011595
+    second: GhibliHouseSprites_97
+  - first:
+      213: -1015929459677438803
+    second: GhibliHouseSprites_98
+  - first:
+      213: -8397763297755762389
+    second: GhibliHouseSprites_99
+  - first:
+      213: -8285410899072213633
+    second: Rock
+  - first:
+      213: -378334484695282417
+    second: Lamppost_1
+  - first:
+      213: -3406025295401751743
+    second: GhibliHouseSprites_102
+  - first:
+      213: 6652884072768697712
+    second: GhibliHouseSprites_103
+  - first:
+      213: 813338123209786981
+    second: GhibliHouseSprites_104
+  - first:
+      213: -3866079285076847772
+    second: GhibliHouseSprites_74
+  - first:
+      213: 629688168142992653
+    second: GhibliHouseSprites_75
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lamppost_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 85
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb0f5798444b6030800000000000000
+      internalID: 3488957414896503799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence01
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 55
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de133ecddeb7f550800000000000000
+      internalID: -6628112899244112628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence03
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 21
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfda67e7ed91f8190800000000000000
+      internalID: 2172193804069600303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence02
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 10
+        width: 7
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe99311bc295e79a0800000000000000
+      internalID: 2705349003966469916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stonepath
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 65
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a17fde973abaa80800000000000000
+      internalID: -8454484131379209637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 55
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b12d26ee89dc570800000000000000
+      internalID: 8488609022290828162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House01
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 122
+        width: 248
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d1a1fb5cf81b490800000000000000
+      internalID: -7732241005740941937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhibliHouseSprites_66
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 149
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f596265adc06445b0800000000000000
+      internalID: -5385072818069018273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GhibliHouseSprites_67
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 149
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61117d1566cc1c770800000000000000
+      internalID: 8629403100850360598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 4
+        width: 155
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544c0887362968190800000000000000
+      internalID: -7960514335409650619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 7
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdaf9fcb96870b60800000000000000
+      internalID: 7712280890656665032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 19
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d96ae6fae440d80800000000000000
+      internalID: -8285410899072213633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamppost_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 5
+        width: 13
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d05796ac2efbaf0800000000000000
+      internalID: -378334484695282417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_02
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 214
+        width: 268
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120a27f5bdb299820800000000000000
+      internalID: 2925417654153027617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House_03
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 198
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3b2df83f3381ad0800000000000000
+      internalID: -2731376052817185868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bush: 8488609022290828162
+      Fence01: -6628112899244112628
+      Fence02: 2705349003966469916
+      Fence03: 2172193804069600303
+      GhibliHouseSprites_66: -5385072818069018273
+      GhibliHouseSprites_67: 8629403100850360598
+      Grass: -7960514335409650619
+      House01: -7732241005740941937
+      House_02: 2925417654153027617
+      House_03: -2731376052817185868
+      Lamppost_1: -378334484695282417
+      Lamppost_2: 3488957414896503799
+      Rock: -8285410899072213633
+      Stonepath: -8454484131379209637
+      Tree: 7712280890656665032
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
