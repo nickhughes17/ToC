@@ -33,6 +33,7 @@ public class AIMovement : MonoBehaviour
     protected Vector3 target;
     public Animator animator;
     public Rigidbody2D rb;
+    [SerializeField] private SqueakController squeakController;
 
     //set the waitTime (idle time) to the startWaitTime variable.
     //generate a new target to start walking.
@@ -136,7 +137,8 @@ public class AIMovement : MonoBehaviour
             animator.SetBool("isChasing", true);
             animator.SetFloat("Horizontal", (transform.position.x - playerPosition.x));
             animator.SetFloat("Vertical", (transform.position.y - playerPosition.y) * -1);
-            transform.position = Vector3.MoveTowards(transform.position, playerPosition, step * 1.2f);
+            transform.position = Vector3.MoveTowards(transform.position, playerPosition, 0.003f + 0.002f * squeakController.currentSqueak);
+            Debug.Log( 0.003f + 0.001f * squeakController.currentSqueak);
             stealthUi.SetChaseProgress(Mathf.RoundToInt(chaseTime / startChaseTime * 100));
             stealthUi.isChasing = true;
         }
@@ -189,6 +191,7 @@ public class AIMovement : MonoBehaviour
         animator.SetBool("isChasing", false);
         surpriseTime = startSurpriseTime;
         stealthUi.isChasing = false;
+        squeakController.currentSqueak += 2;
     }
 
     //idle in position

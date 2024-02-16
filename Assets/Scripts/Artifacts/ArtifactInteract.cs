@@ -14,6 +14,8 @@ public class ArtifactInteract : MonoBehaviour
     [SerializeField] private UnityEvent inRangeAction;
     [SerializeField] private UnityEvent postInteractAction;
     [SerializeField] private UnityEvent artifactPickedUp;
+    [SerializeField] private SqueakController squeakController;
+
 
     void Update()
     {
@@ -30,6 +32,7 @@ public class ArtifactInteract : MonoBehaviour
         {
             postInteractAction.Invoke();
             DropArtifact();
+            squeakController.currentSqueak += 5;
             artifactHasDropped = true;
         }
     }
