@@ -54,7 +54,6 @@ public class FieldOfView : MonoBehaviour
                 if (raycastHit2D.collider.tag == "Player" && !searchImmune)
                 {
                     //HANDLE PLAYER SEEN HERE
-                    Debug.Log("PLAYER SEEN");
                     playerSeen = true;
                 }
             }

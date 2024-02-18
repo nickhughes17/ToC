@@ -1427,8 +1427,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHazard: 0
-  hazardRate: 2
-  hazardDisplay: {fileID: 1997600876}
+  tickRate: 10
+  amountPerTick: 1
+  rollInterval: 1
+  amountDisplay: {fileID: 1997600876}
+  wallLocations:
+  - {x: -22, y: -4}
+  - {x: -22, y: 4}
+  wallPrefab: {fileID: 9056064770478099569, guid: 7775e16bdac618c4289b373056775f80, type: 3}
 --- !u!1 &382691953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,8 +6225,8 @@ MonoBehaviour:
   minY: -13
   maxY: 2
   speed: 1
-  startWaitTime: 1
-  startSurpriseTime: 1
+  startWaitTime: 2
+  startSurpriseTime: 2
   viewDistance: 10
   startViewDistance: 10
   startChaseTime: 5
@@ -6435,8 +6441,8 @@ MonoBehaviour:
   uiCanvas: {fileID: 2073316244}
   enemy: {fileID: 785277807}
   slider: {fileID: 220297994}
-  seenUi: {fileID: 158320875}
-  uiUse: {fileID: 0}
+  playerSeenImage: {fileID: 158320875}
+  playerSeenImageRendered: {fileID: 0}
   isChasing: 0
   startingOffset: {x: 0, y: 1, z: 0}
 --- !u!1 &951421407
@@ -8177,7 +8183,7 @@ Transform:
   m_GameObject: {fileID: 1478988017}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.04, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -27,5 +27,4 @@ public class Inventory : MonoBehaviour
         treasureSO.Value += number;
         treasureText.text = "" + treasureSO.Value;
     }
-
 }

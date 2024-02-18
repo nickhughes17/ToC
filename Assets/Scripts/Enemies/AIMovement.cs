@@ -137,8 +137,7 @@ public class AIMovement : MonoBehaviour
             animator.SetBool("isChasing", true);
             animator.SetFloat("Horizontal", (transform.position.x - playerPosition.x));
             animator.SetFloat("Vertical", (transform.position.y - playerPosition.y) * -1);
-            transform.position = Vector3.MoveTowards(transform.position, playerPosition, 0.003f + 0.002f * squeakController.currentSqueak);
-            Debug.Log( 0.003f + 0.001f * squeakController.currentSqueak);
+            transform.position = Vector3.MoveTowards(transform.position, playerPosition, 0.003f + 0.001f * squeakController.currentSqueak);
             stealthUi.SetChaseProgress(Mathf.RoundToInt(chaseTime / startChaseTime * 100));
             stealthUi.isChasing = true;
         }

@@ -18,11 +18,9 @@ public class ItemPickup : MonoBehaviour
             switch (gameObject.tag)
             {
                 case "Treasure":
-                    Debug.Log("TREASURE PICKED UP");
                     inv.IncrementTreasures(1);
                     break;
                 case "Tuna":
-                    Debug.Log("TUNA PICKED UP");
                     inv.IncrementTuna(1);
                     break;
             }
