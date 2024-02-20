@@ -12,9 +12,13 @@ public class CardInventory : MonoBehaviour
         Debug.Log(cardToAdd.name + " Added to Inventory");
     }
 
-    public void PrintNumberOfCards()
+    public int GetNumberOfCards()
     {
-        Debug.Log(cardsInInventory.Count);
+        return cardsInInventory.Count;
+    }
+
+    public List<CardSO> GetDeck(){
+        return cardsInInventory;
     }
 
 

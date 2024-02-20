@@ -7,8 +7,6 @@ public class HazardController : MonoBehaviour
 {
     public static HazardController instance { get; private set; }
     public int currentHazard;
-    private float hazardQueue;
-
     public float timeBeforeFirstTick = 0f;
     //how fast hazard chance ticks up
     public float tickRate;

@@ -480,6 +480,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 572376233}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ResetTreasures
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &142632173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.27058825, g: 0.79607844, b: 0.52156866, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.47761202, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1640,8 +1652,9 @@ GameObject:
   - component: {fileID: 572376232}
   - component: {fileID: 572376231}
   - component: {fileID: 572376233}
+  - component: {fileID: 572376234}
   m_Layer: 5
-  m_Name: StatsPanel
+  m_Name: InventoryPanel
   m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1725,6 +1738,23 @@ MonoBehaviour:
   tunaText: {fileID: 2121240589}
   tunaSO: {fileID: 11400000, guid: 8075b6ad8cca2264f9b027827232d121, type: 2}
   treasureSO: {fileID: 11400000, guid: 1dee93fad207bf94d94f394d0b0251ea, type: 2}
+--- !u!114 &572376234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572376229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a691e75d3416e40448cb1cc41297d299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardsInInventory:
+  - {fileID: 11400000, guid: 662acee26a2308d46904ef6024e36047, type: 2}
+  - {fileID: 11400000, guid: 50edebf02b136454db85b2036ea554f0, type: 2}
+  - {fileID: 11400000, guid: dc55856e2f1a1c742996a2415c4c0a56, type: 2}
+  - {fileID: 11400000, guid: b7e6fbbac122b3f4eb83cbf523c8b827, type: 2}
 --- !u!1 &576725278
 GameObject:
   m_ObjectHideFlags: 0
@@ -6366,7 +6396,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &2139322136
 MonoBehaviour:
   m_ObjectHideFlags: 0

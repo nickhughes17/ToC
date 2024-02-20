@@ -1,10 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CardController : MonoBehaviour
 {
     public static CardController instance { get; private set; }
+    private CardInventory cardInv;
+    public float timeBeforeFirstDraw = 0f;
+    //how fast cards draw
+    public float drawRate;
+    //how often to roll for a card draw
+    public float drawInterval;
+    public TMP_Text numberOfCards;
+    private List<CardSO> deckForThisRun;
+
 
     private void Awake()
     {
@@ -17,5 +27,42 @@ public class CardController : MonoBehaviour
         {
             instance = this;
         }
+        InvokeRepeating("DrawCard", timeBeforeFirstDraw, drawRate);
+    }
+
+    void Start()
+    {
+        cardInv = GameObject.FindGameObjectWithTag("Inventory").GetComponent<CardInventory>();
+        deckForThisRun = cardInv.GetDeck();
+        numberOfCards.text = cardInv.GetNumberOfCards().ToString();
+    }
+
+    void Update()
+    {
+        int numCards = cardInv.GetNumberOfCards();
+        numberOfCards.text = numCards.ToString();
+
+        if (numCards <= 0)
+        {
+            CancelInvoke("DrawCard");
+            Debug.Log("DECK EMPTY");
+        }
+    }
+
+    private void DrawCard()
+    {
+        //choose a random card in the deck, play it, remove it from deckForThisRun.
+        int randomIdx = Random.Range(0, deckForThisRun.Count);
+        Debug.Log("Drawing " + randomIdx + " Card");
+        CardSO selected = deckForThisRun[randomIdx];
+        deckForThisRun.RemoveAt(randomIdx);
+        PlayCard(selected);
+    }
+
+    private void PlayCard(CardSO cardToPlay)
+    {
+        string attributeToAffect = cardToPlay.attributeToAffect;
+        int numToAffect = cardToPlay.amountToAffect;
+        Debug.Log("CARD PLAYED: " + attributeToAffect + " : " + numToAffect);
     }
 }
