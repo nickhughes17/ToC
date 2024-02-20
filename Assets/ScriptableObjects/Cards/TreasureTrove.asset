@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94a9f4aef41b85e44951dd9b69c2a764, type: 3}
-  m_Name: HazardHalt
+  m_Name: TreasureTrove
   m_EditorClassIdentifier: 
-  name: Hazard Halt
-  description: Block 2 Hazard
+  name: Treasure Trove
+  description: Add 2 Treasure
   artwork: {fileID: 21300000, guid: 0b994559036b6f242b9aff55ad63ac1c, type: 3}
-  directionIcon: {fileID: 21300000, guid: 2337f9528feb98c4c818205eae3e0222, type: 3}
-  attributeIcon: {fileID: 21300000, guid: 39086698bedc6344e8b89c4ae3de450e, type: 3}
-  attributeToAffect: Hazard
+  directionIcon: {fileID: 21300000, guid: e866d27d5fa9e9d48852699326e4265b, type: 3}
+  attributeIcon: {fileID: -5385072818069018273, guid: 78a9fdc1606d97e46ab57aeb71cbbbf4, type: 3}
+  attributeToAffect: Treasure
   amountToAffect: 2
-  price: 1
+  price: 3

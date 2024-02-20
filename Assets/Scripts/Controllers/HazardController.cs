@@ -63,23 +63,22 @@ public class HazardController : MonoBehaviour
         float baseChance = 0.01f;
         float chanceToHit = baseChance * currentHazard;
         float randomValue = Random.value;
-        Debug.Log("Rolling for hazard with chance: " + chanceToHit * 100 + "%");
 
         if(randomValue <= chanceToHit){
             //raise a random hazard wall
             RaiseHazardWall();
+            //reset hazard to 0
+            currentHazard = 0;
         } 
     }
 
     private void RaiseHazardWall(){
         if(wallLocations.Count == 0){
-            Debug.Log("MAX HAZARD REACHED! all walls up!");
             maxHazardReached = true;
         } else {
             int randomIdx = Random.Range(0, wallLocations.Count);
             Vector2 selected = wallLocations[randomIdx];
             wallLocations.RemoveAt(randomIdx);
-            Debug.Log("Hazard Wall Raised: " + selected);
             GameObject newWall = Instantiate(wallPrefab) as GameObject;
             newWall.transform.position = new Vector2(selected.x, selected.y);
         }

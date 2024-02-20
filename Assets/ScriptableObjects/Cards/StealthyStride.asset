@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: StealthyStride
   description: Block 2 Squeak
-  artwork: {fileID: 21300000, guid: de01bb66e36a7a64bb48a980f634d659, type: 3}
+  artwork: {fileID: 21300000, guid: 0b994559036b6f242b9aff55ad63ac1c, type: 3}
   directionIcon: {fileID: 21300000, guid: 2337f9528feb98c4c818205eae3e0222, type: 3}
   attributeIcon: {fileID: 21300000, guid: 4510e368b4dac8e4d845900083e18398, type: 3}
-  attributeToAffect: 
-  amountToAffect: 0
+  attributeToAffect: Squeak
+  amountToAffect: 2
+  price: 2

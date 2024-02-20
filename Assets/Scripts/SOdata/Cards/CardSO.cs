@@ -12,4 +12,5 @@ public class CardSO : ScriptableObject
    public Sprite attributeIcon;
    public string attributeToAffect;
    public int amountToAffect;
+   public int price;
 }

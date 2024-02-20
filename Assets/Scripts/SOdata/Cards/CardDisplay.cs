@@ -12,6 +12,7 @@ public class CardDisplay : MonoBehaviour
     public Image artworkImage;
     public Image directionalIcon;
     public Image attributeIcon;
+    public TMP_Text priceText;
 
 
     // Start is called before the first frame update
@@ -22,5 +23,9 @@ public class CardDisplay : MonoBehaviour
         artworkImage.sprite = card.artwork;
         directionalIcon.sprite = card.directionIcon;
         attributeIcon.sprite = card.attributeIcon;
+        if (priceText != null)
+        {
+            priceText.text = card.price.ToString();
+        }
     }
 }

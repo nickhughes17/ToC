@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ba03cd364ff51498f7b11083cb349c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: HomeScreen
+  nextLevel: PostGameShop
 --- !u!1 &269674746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,9 +1427,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHazard: 0
-  tickRate: 10
+  timeBeforeFirstTick: 0
+  tickRate: 1
   amountPerTick: 1
-  rollInterval: 1
+  rollInterval: 5
   amountDisplay: {fileID: 1997600876}
   wallLocations:
   - {x: -22, y: -4}
