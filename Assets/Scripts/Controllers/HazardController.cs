@@ -6,13 +6,14 @@ using TMPro;
 public class HazardController : MonoBehaviour
 {
     public static HazardController instance { get; private set; }
-    public float currentHazard;
+    public int currentHazard;
+    private float hazardQueue;
 
     public float timeBeforeFirstTick = 0f;
     //how fast hazard chance ticks up
     public float tickRate;
     //how much hazard chance ticks up
-    public float amountPerTick;
+    public int amountPerTick;
     //how often to roll for a hazard tick
     public float rollInterval;
     private float timer = 0f;
@@ -60,9 +61,9 @@ public class HazardController : MonoBehaviour
     private void RollForHazardTick() {
         // (1*currentHazard) / 100 chance to tick a wall up per Roll.
         //1/100 = 0.01f
-        float baseChance = 0.01f;
-        float chanceToHit = baseChance * currentHazard;
-        float randomValue = Random.value;
+        double baseChance = 0.01;
+        double chanceToHit = baseChance * currentHazard;
+        double randomValue = Random.value;
 
         if(randomValue <= chanceToHit){
             //raise a random hazard wall
