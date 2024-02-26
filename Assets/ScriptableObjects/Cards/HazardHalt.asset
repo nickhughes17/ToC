@@ -20,3 +20,4 @@ MonoBehaviour:
   attributeToAffect: Hazard
   amountToAffect: 2
   price: 1
+  maxNumberOfCopies: 2

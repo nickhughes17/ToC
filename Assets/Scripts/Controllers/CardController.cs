@@ -7,6 +7,7 @@ public class CardController : MonoBehaviour
 {
     public static CardController instance { get; private set; }
     private CardInventory cardInv;
+    [SerializeField] private CardPlayedController cardPlayedController;
     public float timeBeforeFirstDraw = 0f;
     //how fast cards draw
     public float drawRate;
@@ -46,7 +47,6 @@ public class CardController : MonoBehaviour
         if (numCards <= 0)
         {
             CancelInvoke("DrawCard");
-            Debug.Log("DECK EMPTY");
         }
     }
 
@@ -63,6 +63,6 @@ public class CardController : MonoBehaviour
     {
         string attributeToAffect = cardToPlay.attributeToAffect;
         int numToAffect = cardToPlay.amountToAffect;
-        Debug.Log("CARD PLAYED: " + attributeToAffect + " : " + numToAffect);
+        cardPlayedController.PlayCard(cardToPlay);
     }
 }

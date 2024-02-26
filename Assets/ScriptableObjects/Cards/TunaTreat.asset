@@ -20,3 +20,4 @@ MonoBehaviour:
   attributeToAffect: Tuna
   amountToAffect: 2
   price: 4
+  maxNumberOfCopies: 5

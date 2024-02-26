@@ -10,11 +10,8 @@ public class DeployTreasure : MonoBehaviour
     [SerializeField] private float spawnLocationY;
     System.Random rnd = new System.Random();
     [SerializeField] private float distanceFromSpawnLocation;
-
-    void Start()
-    {
-        StartCoroutine(TreasureWave());
-    }
+    private float totalTime = 0f;
+    private Coroutine coroutineInstance;
 
     private void SpawnTreasure()
     {
@@ -27,12 +24,44 @@ public class DeployTreasure : MonoBehaviour
         }
     }
 
-    IEnumerator TreasureWave()
+    private IEnumerator RunStackingCoroutine(float duration)
     {
-        while (true)
+        float remainingTime = duration;
+
+        // Run the coroutine until remaining time is zero
+        while (remainingTime > 0f)
         {
+
+            // Update the total time elapsed
+            totalTime += Time.deltaTime;
+
+            // Update remaining time for this frame
+            remainingTime -= Time.deltaTime;
+
             yield return new WaitForSeconds(treasureController.spawnTime);
             SpawnTreasure();
+
+            // Wait for the end of the frame
+            yield return null;
         }
     }
+
+    // IEnumerator TreasureWave(float )
+    // {
+    //     float remainingTime = duration;
+    //     while (true)
+    //     {
+    //         yield return new WaitForSeconds(treasureController.spawnTime);
+    //         SpawnTreasure();
+    //     }
+    // }
+
+    public void StartTreasureDropCoroutine(float duration)
+    {
+        if (coroutineInstance != null)
+            StopCoroutine(coroutineInstance); // Stop the previous coroutine instance
+
+        coroutineInstance = StartCoroutine(RunStackingCoroutine(duration));
+    }
+
 }

@@ -19,6 +19,7 @@ public class HazardController : MonoBehaviour
     public List<Vector2> wallLocations;
     [SerializeField] private GameObject wallPrefab;
     private bool maxHazardReached = false;
+    public int blockQueue = 0;
     
 
     private void Awake()
@@ -64,8 +65,13 @@ public class HazardController : MonoBehaviour
         double randomValue = Random.value;
 
         if(randomValue <= chanceToHit){
+            if(blockQueue == 0){
+                RaiseHazardWall();
+            } else {
+                Debug.Log("HAZARD BLOCKED, Remaining Queued Hazard Block: " + blockQueue);
+                blockQueue -= 1;
+            }
             //raise a random hazard wall
-            RaiseHazardWall();
             //reset hazard to 0
             currentHazard = 0;
         } 

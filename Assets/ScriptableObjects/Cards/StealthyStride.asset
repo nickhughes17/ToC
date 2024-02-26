@@ -20,3 +20,4 @@ MonoBehaviour:
   attributeToAffect: Squeak
   amountToAffect: 2
   price: 2
+  maxNumberOfCopies: 5

@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243004dc1bd655644b37d2578fd7552b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSqueak: 1
+  currentSqueak: 10
   squeakDisplay: {fileID: 110495963}
 --- !u!1 &87710731
 GameObject:
@@ -1412,6 +1412,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 667646295}
+  - {fileID: 1766807321}
   m_Father: {fileID: 472378219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370348267
@@ -1468,6 +1469,7 @@ MonoBehaviour:
   - {x: -22, y: -4}
   - {x: -22, y: 4}
   wallPrefab: {fileID: 9056064770478099569, guid: 7775e16bdac618c4289b373056775f80, type: 3}
+  blockQueue: 0
 --- !u!1 &382691953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5821,6 +5823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304861cb9565bc348b3394e6452a3393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardPlayedController: {fileID: 1766807322}
   timeBeforeFirstDraw: 1
   drawRate: 2
   drawInterval: 2
@@ -23052,6 +23055,54 @@ Transform:
   - {fileID: 462541493}
   m_Father: {fileID: 1583480752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1766807320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766807321}
+  - component: {fileID: 1766807322}
+  m_Layer: 0
+  m_Name: CardPlayedController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1766807321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766807320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 346678140}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766807322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766807320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a4a447fcb0517498cee93e5658dbfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hazardController: {fileID: 370348269}
+  squeakController: {fileID: 87158100}
+  treasureController: {fileID: 1204943869}
+  tunaController: {fileID: 1266536935}
 --- !u!1 &1766964770
 GameObject:
   m_ObjectHideFlags: 0
