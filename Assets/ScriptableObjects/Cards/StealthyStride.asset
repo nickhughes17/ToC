@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a9f4aef41b85e44951dd9b69c2a764, type: 3}
   m_Name: StealthyStride
   m_EditorClassIdentifier: 
-  name: StealthyStride
+  name: Stealthy Stride
   description: Block 2 Squeak
   artwork: {fileID: 21300000, guid: 0b994559036b6f242b9aff55ad63ac1c, type: 3}
   directionIcon: {fileID: 21300000, guid: 2337f9528feb98c4c818205eae3e0222, type: 3}

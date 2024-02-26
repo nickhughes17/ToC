@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a9f4aef41b85e44951dd9b69c2a764, type: 3}
   m_Name: TunaTreat
   m_EditorClassIdentifier: 
-  name: TunaTreat
+  name: Tuna Treat
   description: Add 2 Tuna
   artwork: {fileID: 21300000, guid: 0b994559036b6f242b9aff55ad63ac1c, type: 3}
   directionIcon: {fileID: 21300000, guid: e866d27d5fa9e9d48852699326e4265b, type: 3}

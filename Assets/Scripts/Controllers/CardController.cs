@@ -53,7 +53,6 @@ public class CardController : MonoBehaviour
     {
         //choose a random card in the deck, play it, remove it from deckForThisRun.
         int randomIdx = Random.Range(0, deckForThisRun.Count);
-        Debug.Log("Drawing " + randomIdx + " Card");
         CardSO selected = deckForThisRun[randomIdx];
         deckForThisRun.RemoveAt(randomIdx);
         PlayCard(selected);
