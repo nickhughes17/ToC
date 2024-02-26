@@ -6266,11 +6266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a691e75d3416e40448cb1cc41297d299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardsInInventory:
-  - {fileID: 11400000, guid: 662acee26a2308d46904ef6024e36047, type: 2}
-  - {fileID: 11400000, guid: 50edebf02b136454db85b2036ea554f0, type: 2}
-  - {fileID: 11400000, guid: dc55856e2f1a1c742996a2415c4c0a56, type: 2}
-  - {fileID: 11400000, guid: b7e6fbbac122b3f4eb83cbf523c8b827, type: 2}
+  deck: {fileID: 11400000, guid: f8cd02b50573b7c48a4dd6031cbb5150, type: 2}
 --- !u!1 &773267595
 GameObject:
   m_ObjectHideFlags: 0

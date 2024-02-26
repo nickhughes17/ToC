@@ -8,8 +8,8 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform uiInventory;
     [SerializeField] private TMP_Text treasureText;
     [SerializeField] private TMP_Text tunaText;
-    [SerializeField] private FloatSO tunaSO;
-    [SerializeField] private FloatSO treasureSO;
+    [SerializeField] private IntSO tunaSO;
+    [SerializeField] private IntSO treasureSO;
 
     private void Awake()
     {
@@ -17,18 +17,29 @@ public class Inventory : MonoBehaviour
         tunaText.text = "" + tunaSO.Value;
     }
 
-    public void IncrementTuna(float number)
+    public void IncrementTuna(int number)
     {
         tunaSO.Value += number;
         tunaText.text = "" + tunaSO.Value;
     }
-    public void IncrementTreasures(float number)
+    public void IncrementTreasures(int number)
     {
         treasureSO.Value += number;
         treasureText.text = "" + treasureSO.Value;
     }
 
-    public void ResetTreasures(){
+    public void ResetTreasures()
+    {
         treasureSO.Value = 0;
+    }
+
+    public int GetNumberOfTuna()
+    {
+        return tunaSO.Value;
+    }
+
+    public int GetNumberOfTreasures()
+    {
+        return treasureSO.Value;
     }
 }

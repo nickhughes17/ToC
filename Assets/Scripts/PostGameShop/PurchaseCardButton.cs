@@ -14,10 +14,15 @@ public class PurchaseCardButton : MonoBehaviour
         cardInv = GameObject.FindGameObjectWithTag("Inventory").GetComponent<CardInventory>();
     }
 
-    public void PurchaseCard() {
-        // TODO: CHECK IF THEY HAVE THE RIGHT NUMBER OF TREASURE
+    public void PurchaseCard()
+    {
         int priceOfCard = 0 - cardToBuy.price;
-        inv.IncrementTreasures(priceOfCard);
-        cardInv.AddCardToInventory(cardToBuy);
+        if (inv.GetNumberOfTreasures() + priceOfCard >= 0)
+        {
+            inv.IncrementTreasures(priceOfCard);
+            cardInv.AddCardToInventory(cardToBuy);
+        } else {
+            Debug.Log("CARD TOO EXPENSIVE");
+        }
     }
 }

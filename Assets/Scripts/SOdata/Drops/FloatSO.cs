@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class FloatSO : ScriptableObject
+public class IntSO : ScriptableObject
 {
-    [SerializeField] private float _value;
+    [SerializeField] private int _value;
     
-    public float Value
+    public int Value
     {
         get { return _value; }
         set { _value = value; }

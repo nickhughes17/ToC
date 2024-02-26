@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class CardInventory : MonoBehaviour
 {
-    [SerializeField] private List<CardSO> cardsInInventory;
+    [SerializeField] private DeckSO deck;
 
     public void AddCardToInventory(CardSO cardToAdd)
     {
-        cardsInInventory.Add(cardToAdd);
-        Debug.Log(cardToAdd.name + " Added to Inventory");
-    }
-
-    public int GetNumberOfCards()
-    {
-        return cardsInInventory.Count;
+        deck.AddCardToDeck(cardToAdd);
+        Debug.Log(cardToAdd.name + " Added to Deck");
     }
 
     public List<CardSO> GetDeck(){
-        return cardsInInventory;
+        return deck.cards;
     }
 
 

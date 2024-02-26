@@ -33,13 +33,14 @@ public class CardController : MonoBehaviour
     void Start()
     {
         cardInv = GameObject.FindGameObjectWithTag("Inventory").GetComponent<CardInventory>();
-        deckForThisRun = cardInv.GetDeck();
-        numberOfCards.text = cardInv.GetNumberOfCards().ToString();
+        List<CardSO> deckCpy = cardInv.GetDeck();
+        List<CardSO> newDeck = new List<CardSO>(deckCpy);
+        deckForThisRun = newDeck;
     }
 
     void Update()
     {
-        int numCards = cardInv.GetNumberOfCards();
+        int numCards = deckForThisRun.Count;
         numberOfCards.text = numCards.ToString();
 
         if (numCards <= 0)
