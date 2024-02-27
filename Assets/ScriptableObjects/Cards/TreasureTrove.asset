@@ -18,5 +18,5 @@ MonoBehaviour:
   directionIcon: {fileID: 21300000, guid: e866d27d5fa9e9d48852699326e4265b, type: 3}
   attributeIcon: {fileID: -5385072818069018273, guid: 78a9fdc1606d97e46ab57aeb71cbbbf4, type: 3}
   attributeToAffect: Treasure
-  amountToAffect: 1
+  amountToAffect: 5
   price: 3
