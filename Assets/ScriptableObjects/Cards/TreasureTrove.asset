@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: TreasureTrove
   m_EditorClassIdentifier: 
   name: Treasure Trove
-  description: Add 2 Treasure
+  description: Spawn 5 seconds of Treasure
   artwork: {fileID: 21300000, guid: 0b994559036b6f242b9aff55ad63ac1c, type: 3}
   directionIcon: {fileID: 21300000, guid: e866d27d5fa9e9d48852699326e4265b, type: 3}
   attributeIcon: {fileID: -5385072818069018273, guid: 78a9fdc1606d97e46ab57aeb71cbbbf4, type: 3}
   attributeToAffect: Treasure
-  amountToAffect: 5
+  amountToAffect: 1
   price: 3
-  maxNumberOfCopies: 5

@@ -1,24 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class TreasureController : MonoBehaviour
 {
-    public float spawnTime { get; set;}
-    public float spawnChance;
-
-    public void ChangeSpawnChance(int value)
+    public float spawnTime = 1f;
+    public float spawnChance = 1f;
+    private float _totalTime = 0f; // Total time to run the spawning coroutine
+    public float totalTime
     {
-        if (spawnChance + value <= 100 && spawnChance + value >= 0)
+        get { return _totalTime; }
+        set
         {
-            spawnChance += value;
+            _totalTime = value;
+            OnTotalTimeChanged?.Invoke(value);
         }
     }
 
-    void Start(){
-        spawnTime = 1;
-        spawnChance = 20;
-    }
-
-    
+    // Event to notify listeners when totalTime changes
+    public event Action<float> OnTotalTimeChanged;
 }

@@ -62,7 +62,7 @@ public class CardController : MonoBehaviour
     private void PlayCard(CardSO cardToPlay)
     {
         string attributeToAffect = cardToPlay.attributeToAffect;
-        int numToAffect = cardToPlay.amountToAffect;
+        int? numToAffect = cardToPlay.amountToAffect;
         cardPlayedController.PlayCard(cardToPlay);
     }
 }

@@ -68,7 +68,6 @@ public class HazardController : MonoBehaviour
             if(blockQueue == 0){
                 RaiseHazardWall();
             } else {
-                Debug.Log("HAZARD BLOCKED, Remaining Queued Hazard Block: " + blockQueue);
                 blockQueue -= 1;
             }
             //raise a random hazard wall

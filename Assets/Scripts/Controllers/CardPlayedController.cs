@@ -20,8 +20,8 @@ public class CardPlayedController : MonoBehaviour
                 {
                     //==============================Hazard Halt
                     case "Hazard Halt":
-                        Debug.Log("HAZARD HALT PLAYED");
                         hazardController.blockQueue += card.amountToAffect;
+                        Debug.Log("HAZARD HALT PLAYED. " + hazardController.blockQueue + " hazard block remaining.");
                         break;
                 }
                 break;
@@ -33,15 +33,14 @@ public class CardPlayedController : MonoBehaviour
                 {
                     //==============================Stealthy Stride
                     case "Stealthy Stride":
-                        Debug.Log("STEALTHY STRIDE PLAYED");
                         if (squeakController.currentSqueak - card.amountToAffect >= 0)
                         {
-                            Debug.Log("Squeak Reduced by: " + card.amountToAffect);
+                            Debug.Log("STEALTHY STRIDE PLAYED. Squeak Reduced by: " + card.amountToAffect);
                             squeakController.currentSqueak -= card.amountToAffect;
                         }
                         else
                         {
-                            Debug.Log("Squeak Reduced to: 0");
+                            Debug.Log("STEALTHY STRIDE PLAYED. Squeak Reduced to: 0");
                             squeakController.currentSqueak = 0;
                         }
                         break;
@@ -50,14 +49,15 @@ public class CardPlayedController : MonoBehaviour
 
             //===================================================================TREASURE
             case "Treasure":
-            
-                // switch (card.name)
-                // {
-                //     //==============================Treasure Trove
-                //     case "Treasure Trove":
-                //         deployTreasure.StartTreasureDropCoroutine(card.amountToAffect);
-                //     break;
-                // }
+
+                switch (card.name)
+                {
+                    //==============================Treasure Trove
+                    case "Treasure Trove":
+                        treasureController.totalTime += (float)card.amountToAffect;
+                        Debug.Log("TREASURE TROVE PLAYED. Total treasure drop time queued up: " + treasureController.totalTime);
+                    break;
+                }
                 break;
 
             //===================================================================TUNA

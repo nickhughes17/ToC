@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243004dc1bd655644b37d2578fd7552b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSqueak: 10
+  currentSqueak: 0
   squeakDisplay: {fileID: 110495963}
 --- !u!1 &87710731
 GameObject:
@@ -365,10 +365,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treasurePrefab: {fileID: 4053276820289372050, guid: bf0363515ae345044b695a2d9bb41a69, type: 3}
-  treasureController: {fileID: 1204943869}
   spawnLocationX: -30
   spawnLocationY: 0
-  distanceFromSpawnLocation: 0
+  spawnRadius: 2
+  treasureController: {fileID: 1204943869}
 --- !u!1 &110495962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,10 +1378,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treasurePrefab: {fileID: 4053276820289372050, guid: bf0363515ae345044b695a2d9bb41a69, type: 3}
-  treasureController: {fileID: 1204943869}
   spawnLocationX: -30
   spawnLocationY: -10
-  distanceFromSpawnLocation: 0
+  spawnRadius: 2
+  treasureController: {fileID: 1204943869}
 --- !u!1 &346678139
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,10 +6040,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treasurePrefab: {fileID: 4053276820289372050, guid: bf0363515ae345044b695a2d9bb41a69, type: 3}
-  treasureController: {fileID: 1204943869}
   spawnLocationX: -30
   spawnLocationY: -5
-  distanceFromSpawnLocation: 0
+  spawnRadius: 2
+  treasureController: {fileID: 1204943869}
 --- !u!1 &718373697
 GameObject:
   m_ObjectHideFlags: 0
@@ -7584,7 +7584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6d8ed28eedc0d46a7b865513668408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnChance: 0
+  spawnTime: 1
+  spawnChance: 1
 --- !u!4 &1204943870
 Transform:
   m_ObjectHideFlags: 0

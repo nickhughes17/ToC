@@ -13,5 +13,4 @@ public class CardSO : ScriptableObject
    public string attributeToAffect;
    public int amountToAffect;
    public int price;
-   public int maxNumberOfCopies;
 }

@@ -4,64 +4,67 @@ using UnityEngine;
 
 public class DeployTreasure : MonoBehaviour
 {
-    [SerializeField] private GameObject treasurePrefab;
+    public GameObject treasurePrefab; // The prefab of the treasure GameObject
+    public float spawnLocationX; // X coordinate of the spawn location
+    public float spawnLocationY; // Y coordinate of the spawn location
+    public float spawnRadius = 5f; // Radius within which treasures will be spawned
+
     [SerializeField] private TreasureController treasureController;
-    [SerializeField] private float spawnLocationX;
-    [SerializeField] private float spawnLocationY;
-    System.Random rnd = new System.Random();
-    [SerializeField] private float distanceFromSpawnLocation;
-    private float totalTime = 0f;
-    private Coroutine coroutineInstance;
+    private Coroutine spawnCoroutine;
 
-    private void SpawnTreasure()
+    void Start()
     {
-        int val = rnd.Next(1, 100);
-        if (val <= treasureController.spawnChance)
-        {
-            GameObject newTreasure = Instantiate(treasurePrefab) as GameObject;
-            newTreasure.transform.position = new Vector2(spawnLocationX + Random.Range(-1.0f, 1.0f),
-                    spawnLocationY + Random.Range(-1.0f, 1.0f));
-        }
+        // Subscribe to the OnTotalTimeChanged event
+        treasureController.OnTotalTimeChanged += OnTotalTimeChangedHandler;
     }
 
-    private IEnumerator RunStackingCoroutine(float duration)
+    void OnDestroy()
     {
-        float remainingTime = duration;
+        // Unsubscribe from the event when the GameObject is destroyed
+        treasureController.OnTotalTimeChanged -= OnTotalTimeChangedHandler;
 
-        // Run the coroutine until remaining time is zero
-        while (remainingTime > 0f)
+        // Stop the coroutine when the GameObject is destroyed
+        if (spawnCoroutine != null)
+            StopCoroutine(spawnCoroutine);
+    }
+
+    IEnumerator SpawnTreasuresCoroutine(float totalTime)
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < totalTime)
         {
+            // Generate a random position within the spawn radius
+            Vector2 randomPosition = Random.insideUnitCircle * spawnRadius;
+            Vector3 spawnPosition = new Vector3(randomPosition.x + spawnLocationX, randomPosition.y + spawnLocationY, 0f);
 
-            // Update the total time elapsed
-            totalTime += Time.deltaTime;
+            // Check if a treasure should be spawned based on spawn chance
+            if (Random.value < treasureController.spawnChance)
+            {
+                // Spawn the treasure at the generated position
+                Instantiate(treasurePrefab, spawnPosition, Quaternion.identity);
+            }
 
-            // Update remaining time for this frame
-            remainingTime -= Time.deltaTime;
-
+            // Wait for the specified spawn time
             yield return new WaitForSeconds(treasureController.spawnTime);
-            SpawnTreasure();
 
-            // Wait for the end of the frame
-            yield return null;
+            // Update elapsed time
+            elapsedTime += treasureController.spawnTime;
         }
     }
 
-    // IEnumerator TreasureWave(float )
-    // {
-    //     float remainingTime = duration;
-    //     while (true)
-    //     {
-    //         yield return new WaitForSeconds(treasureController.spawnTime);
-    //         SpawnTreasure();
-    //     }
-    // }
-
-    public void StartTreasureDropCoroutine(float duration)
+    // Method to start or restart the spawning coroutine
+    private void StartSpawning(float totalTime)
     {
-        if (coroutineInstance != null)
-            StopCoroutine(coroutineInstance); // Stop the previous coroutine instance
+        // Restart the coroutine
+        if (spawnCoroutine != null)
+            StopCoroutine(spawnCoroutine);
 
-        coroutineInstance = StartCoroutine(RunStackingCoroutine(duration));
+        spawnCoroutine = StartCoroutine(SpawnTreasuresCoroutine(totalTime));
     }
 
+    // Event handler for OnTotalTimeChanged event
+    private void OnTotalTimeChangedHandler(float totalTime)
+    {
+        StartSpawning(totalTime);
+    }
 }
