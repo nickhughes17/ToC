@@ -56,13 +56,29 @@ public class CardPlayedController : MonoBehaviour
                     case "Treasure Trove":
                         treasureController.totalTime += (float)card.amountToAffect;
                         Debug.Log("TREASURE TROVE PLAYED. Total treasure drop time queued up: " + treasureController.totalTime);
-                    break;
+                        break;
                 }
                 break;
 
             //===================================================================TUNA
             case "Tuna":
-                // card affects tuna
+                switch (card.name)
+                {
+                    //==============================Tuna Treat
+                    //make tuna spawn faster
+                    case "Tuna Treat":
+                        float spawnDecrease = 0.1f * (float)card.amountToAffect;
+                        if (tunaController.spawnTime - spawnDecrease > 1f)
+                        {
+                            tunaController.spawnTime -= spawnDecrease;
+                        }
+                        else
+                        {
+                            tunaController.spawnTime = 1f;
+                        }
+                        Debug.Log("TUNA TREAT PLAYED: Tuna drop rate to: " + tunaController.spawnTime + " seconds");
+                        break;
+                }
                 break;
 
 

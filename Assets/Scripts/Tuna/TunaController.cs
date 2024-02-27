@@ -17,7 +17,7 @@ public class TunaController : MonoBehaviour
 
     void Start()
     {
-        spawnTime = 1.5f;
+        spawnTime = 3f;
         spawnChance = 20;
     }
 }
