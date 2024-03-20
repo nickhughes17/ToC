@@ -20,7 +20,7 @@ public class HazardController : MonoBehaviour
     [SerializeField] private GameObject wallPrefab;
     private bool maxHazardReached = false;
     public int blockQueue = 0;
-    
+
 
     private void Awake()
     {
@@ -36,50 +36,65 @@ public class HazardController : MonoBehaviour
         InvokeRepeating("TickHazard", timeBeforeFirstTick, tickRate);
     }
 
-    void Start(){
+    void Start()
+    {
         amountDisplay.text = currentHazard.ToString("0");
     }
 
-    void Update(){
+    void Update()
+    {
         amountDisplay.text = currentHazard.ToString("0");
         timer += Time.deltaTime;
-        if(timer >= rollInterval && maxHazardReached != true){
+        if (timer >= rollInterval && maxHazardReached != true)
+        {
             RollForHazardTick();
             timer = 0f;
         }
 
-        if(maxHazardReached == true){
+        if (maxHazardReached == true)
+        {
             CancelInvoke("TickHazard");
         }
     }
 
-     private void TickHazard() {
+    private void TickHazard()
+    {
         currentHazard += amountPerTick;
     }
 
-    private void RollForHazardTick() {
+    private void RollForHazardTick()
+    {
         // (1*currentHazard) / 100 chance to tick a wall up per Roll.
         //1/100 = 0.01f
         double baseChance = 0.01;
         double chanceToHit = baseChance * currentHazard;
         double randomValue = Random.value;
 
-        if(randomValue <= chanceToHit){
-            if(blockQueue == 0){
+        if (randomValue <= chanceToHit)
+        {
+            if (blockQueue == 0)
+            {
                 RaiseHazardWall();
-            } else {
+            }
+            else
+            {
                 blockQueue -= 1;
+                Debug.Log("Hazard BLOCKED. Remaining Haz Block: " + blockQueue);
             }
             //raise a random hazard wall
             //reset hazard to 0
             currentHazard = 0;
-        } 
+        }
     }
 
-    private void RaiseHazardWall(){
-        if(wallLocations.Count == 0){
+    private void RaiseHazardWall()
+    {
+        if (wallLocations.Count == 0)
+        {
             maxHazardReached = true;
-        } else {
+        }
+        else
+        {
             int randomIdx = Random.Range(0, wallLocations.Count);
             Vector2 selected = wallLocations[randomIdx];
             wallLocations.RemoveAt(randomIdx);

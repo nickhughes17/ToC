@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CardPlayedController : MonoBehaviour
 {
@@ -9,8 +10,12 @@ public class CardPlayedController : MonoBehaviour
     [SerializeField] private TreasureController treasureController;
     [SerializeField] private TunaController tunaController;
 
+    //For Display
+    [SerializeField] private PlayedCardTextDisplay playedCardText;
+
     public void PlayCard(CardSO card)
     {
+        playedCardText.DisplayPlayedCard(card);
         switch (card.attributeToAffect)
         {
             //===================================================================HAZARD
